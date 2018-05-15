@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+</head>
+
+<body>
+
+    <div class="container" style="margin: 20px;">
+        <div class="row">
+            <div class="col-md-3">
+                <button type="button" class="btn btn-success" onclick="Admin.onClickDownloadNowAvailable()">Download Now Available</button>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-danger" onclick="Admin.onClickDownloadExpired()">Download Expired</button>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-warning" onclick="Admin.onClickDownloadExpiringSoon()">Download Expiring Soon</button>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-success" onclick="Admin.onClickNewSharedContent()">New Shared Content</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../dist/admin.bundle.js"></script>
+</body>
+
+</html>
