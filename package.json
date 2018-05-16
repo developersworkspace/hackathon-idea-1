@@ -5,7 +5,7 @@
   "scripts": {
     "build": "gulp build & tsc & browserify ./dist/main.js --ignore ws -o ./dist/main.bundle.js & browserify ./dist/admin.js --ignore ws --standalone Admin -o ./dist/admin.bundle.js",
     "lint": "tslint ./src/**/*.ts --fix --exclude ./src/**/*.d.ts",
-    "start": "npm run build & node ./dist/app.js --dev"
+    "start": "npm run build & http-server ./dist"
   },
   "repository": {
     "type": "git",
