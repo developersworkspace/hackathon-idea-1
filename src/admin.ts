@@ -29,11 +29,11 @@ export function publishWarning(message: string, title: string): void {
 }
 
 export function onClickDownloadNowAvailable(): void {
-    publishSuccess(`The file you created called '<a href="#">my-export-1</a>' is now available. You can download it from your <a href="#">My Downloads</a> page, in the My Pages area of Passport.`, `Download now available`);
+    publishSuccess(`The file you created called '<a target="_blank" href="https://example.com">my-export-1</a>' is now available. You can download it from your <a href="#">My Downloads</a> page, in the My Pages area of Passport.`, `Download now available`);
 }
 
 export function onClickDownloadExpired(): void {
-    publishError(`Your file 'my-export-1' has expired. Click <a href="#">here</a> to recreate it.`, `Download expired`);
+    publishError(`Your file 'my-export-1' has expired. Click <a target="_blank" href="https://example.com">here</a> to recreate it.`, `Download expired`);
 }
 
 export function onClickDownloadExpiringSoon(): void {
@@ -41,5 +41,5 @@ export function onClickDownloadExpiringSoon(): void {
 }
 
 export function onClickNewSharedContent(): void {
-    publishSuccess(`Pritam Mohanty has <a href="#">shared new content</a>.`, `New Shared Content`);
+    publishSuccess(`Pritam Mohanty has <a target="_blank" href="https://example.com">shared new content</a>.`, `New Shared Content`);
 }

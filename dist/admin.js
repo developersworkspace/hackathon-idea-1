@@ -26,11 +26,11 @@ function publishWarning(message, title) {
 }
 exports.publishWarning = publishWarning;
 function onClickDownloadNowAvailable() {
-    publishSuccess(`The file you created called '<a href="#">my-export-1</a>' is now available. You can download it from your <a href="#">My Downloads</a> page, in the My Pages area of Passport.`, `Download now available`);
+    publishSuccess(`The file you created called '<a target="_blank" href="https://example.com">my-export-1</a>' is now available. You can download it from your <a href="#">My Downloads</a> page, in the My Pages area of Passport.`, `Download now available`);
 }
 exports.onClickDownloadNowAvailable = onClickDownloadNowAvailable;
 function onClickDownloadExpired() {
-    publishError(`Your file 'my-export-1' has expired. Click <a href="#">here</a> to recreate it.`, `Download expired`);
+    publishError(`Your file 'my-export-1' has expired. Click <a target="_blank" href="https://example.com">here</a> to recreate it.`, `Download expired`);
 }
 exports.onClickDownloadExpired = onClickDownloadExpired;
 function onClickDownloadExpiringSoon() {
@@ -38,7 +38,7 @@ function onClickDownloadExpiringSoon() {
 }
 exports.onClickDownloadExpiringSoon = onClickDownloadExpiringSoon;
 function onClickNewSharedContent() {
-    publishSuccess(`Pritam Mohanty has <a href="#">shared new content</a>.`, `New Shared Content`);
+    publishSuccess(`Pritam Mohanty has <a target="_blank" href="https://example.com">shared new content</a>.`, `New Shared Content`);
 }
 exports.onClickNewSharedContent = onClickNewSharedContent;
 //# sourceMappingURL=admin.js.map
