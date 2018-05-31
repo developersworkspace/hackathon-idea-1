@@ -1,0 +1,32 @@
+{
+  "name": "hackathon-idea-1",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "gulp build & tsc & browserify ./dist/main.js --ignore ws -o ./dist/main.bundle.js & browserify ./dist/admin.js --ignore ws --standalone Admin -o ./dist/admin.bundle.js",
+    "lint": "tslint ./src/**/*.ts --fix --exclude ./src/**/*.d.ts",
+    "start": "npm run build & http-server ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developersworkspace/hackathon-idea-1.git"
+  },
+  "author": "Barend Erasmus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/developersworkspace/hackathon-idea-1/issues"
+  },
+  "homepage": "https://github.com/developersworkspace/hackathon-idea-1#readme",
+  "devDependencies": {
+    "@types/node": "^10.0.9",
+    "@types/toastr": "^2.1.35",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "run-sequence": "^2.2.1",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "toastr": "^2.1.4",
+    "wsmq": "0.0.5"
+  }
+}
