@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const wsmq_1 = require("wsmq");
 function onMessage(channel, data, mqc) {
 }
-const messageQueueClient = new wsmq_1.MessageQueueClient('ws://wsmq.openservices.co.za', onMessage, []);
+const messageQueueClient = new wsmq_1.MessageQueueClient('wss://wsmq.openservices.co.za', onMessage, []);
 messageQueueClient.connect();
 function publish(message, title, type) {
     messageQueueClient.send('hackathon-idea-1', {

@@ -15,7 +15,7 @@ function onMessage(channel: string, data: any, mqc: MessageQueueClient): void {
     }
 }
 
-const messageQueueClient: MessageQueueClient = new MessageQueueClient('ws://wsmq.openservices.co.za', onMessage, [
+const messageQueueClient: MessageQueueClient = new MessageQueueClient('wss://wsmq.openservices.co.za', onMessage, [
     'hackathon-idea-1',
 ]);
 
